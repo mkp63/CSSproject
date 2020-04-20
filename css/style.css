@@ -1,62 +1,162 @@
-/* Main Styles File */
-
-body {
-	max-width: 960px;
-	font-family: Roboto Slab;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-	border-bottom: 5px solid #00CCFF;
-    padding-bottom: 12px;
-    margin-bottom: 0;
-	text-align: center
+.wrapper {
+  border: 5px solid #3399FF;
+  display: grid;
+  grid-gap:none;
+  background-color: white;
+  max-width: 960px;
+  margin: auto;
 }
 
-table {
-	width: 100%;
+.wrapper-item {
+  border: 5px solid #3399FF;
 }
 
-footer {
-	border-top: 3px solid;
-	max-width: 960PX
+.header {
+  grid-column: 1/3;
+  grid-row: 1/2;
 }
 
-#wrapper {
-	max-width: 960px;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'Dosis', cursive;
-}
-
-#wrapper img {
-	max-width: 960px;
-	
-}
-
-#grid {
-	display: grid;
-	grid-template-columns: 300px 660px;
-	grid-template-areas:
-	"sidebar content";
-	background-color: #fff;
-	color: #444;
+.nav {
+  grid-column: 1/3;
+  grid-row: 2/3;
 }
 
 .sidebar {
-	grid-area: sidebar;
-	background-color: #E6FBFF;
-	height: auto;
+  grid-column: 1/2;
+  grid-row: 3/6;
+  padding: 10px;
 }
 
-.content {
-	grid-area: content;
-	background-color: #FF99FF;
+.contact {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  padding: 10px;
 }
 
-.box {
-  padding: 20px;
+.education {
+  grid-column: 2/3;
+  grid-row: 4/5;
+  padding: 10px;
 }
 
-.first-title {
-	margin-top: 0;
+
+.work experience {
+  grid-column: 1/2;
+  grid-row: 6/8;
+  padding: 10px;
+}
+
+. additional skills {
+  grid-column: 2/3;
+  grid-row: 6/7;
+  padding: 10px;
+}
+
+
+.footer {
+  grid-column: 1/3;
+  grid-row: 8/9;
+}
+
+nav ul{
+  background-color: #FFFFFF;
+  list-style-type: none;
+  overflow: hidden;
+  font-family: 'Roboto Slab', sans-serif;
+  border: 4px solid white;
+}
+
+nav li a {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  padding: 12px 14px;
+  text-align: center;
+  float: left;
+}
+
+nav li a:hover {
+  background-color: #A2F8FF;
+}
+
+li {
+  font-family: 'Dosis', sans-serif;
+  list-style-type: none;
+}
+
+ul a:hover {
+  background-color: #FFFFFF;
+}
+
+ul a:visited {
+  background-color: #A6C4C7;
+  color: gray;
+}
+
+ul a:active {
+  background-color: #29A3AD;
+}
+
+ul a {
+  color: black;
+  text-decoration: none;
+}
+
+h1 {
+  background-color: #FFFFFF;
+  color: white;
+  text-align: center;
+  font-family: 'Dosis', cursive;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: 'Quicksand', sans-serif;
+  color: #3D2B52;
+  text-decoration: underline;
+}
+
+h3 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+h4 {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+h6 {
+  background-color: #FFFFFF;
+  color: white;
+  text-align: center;
+  font-family: 'Dosis', cursive;
+  font-size: 20px;
+}
+
+.caption {
+  display: block;
+  font-family: 'Dosis', sans-serif;
+  font-size: 10px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+img {
+  border: 10px solid #FFFFFF;
+  max-width: 100%;
+  max-height: 100%;
+  position: static;
+}
+
+.center {
+  display: block;
+  margin: 20px auto auto;
+}
+
+p {
+  font-family: 'PT Sans', sans-serif;
 }
